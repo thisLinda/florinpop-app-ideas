@@ -1,0 +1,64 @@
+*,*::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+p, h1 {
+  overflow-wrap: break-word;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.container {
+  align-items: center;
+  display: grid;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  gap: 10px;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 2fr 2fr;
+  /* brute force left margin */
+  margin: 0 50px 0 90px; 
+}
+
+#binaryInput {
+  text-align: center;
+  width: 100px;
+}
+
+.italic {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.input-box,
+.output-box {
+  border: 1px solid black;
+  border-radius: 2px;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 5px;
+  text-align: center;
+  width: 100px;
+}
