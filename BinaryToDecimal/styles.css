@@ -7,6 +7,8 @@
 }
 
 html, body {
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   height: 100%;
 }
 
@@ -24,41 +26,27 @@ input, button, textarea, select {
 }
 
 h1 {
-  font-family: 'Noto Sans', sans-serif;
-  font-family: 'Roboto', sans-serif;
-  padding-bottom: 20px;
+  padding: 16px 0;
   text-align: center;
 }
 
 .container {
   align-items: center;
   display: grid;
-  font-family: 'Noto Sans', sans-serif;
-  font-family: 'Roboto', sans-serif;
   gap: 10px;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 2fr 2fr;
   /* brute force left margin */
-  margin: 0 50px 0 90px; 
+  margin: 0 40px 0 90px; 
 }
 
-#binaryInput {
+#binaryInput, #decimalOutput {
+  font-weight: bold;
   text-align: center;
-  width: 100px;
+  width: 48%;
 }
 
 .italic {
   font-size: 12px;
   font-style: italic;
-}
-
-.input-box,
-.output-box {
-  border: 1px solid black;
-  border-radius: 2px;
-  box-sizing: border-box;
-  font-size: 16px;
-  padding: 5px;
-  text-align: center;
-  width: 100px;
 }

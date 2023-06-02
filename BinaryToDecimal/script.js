@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(e) {
   // Get the binary input field and decimal output box elements
   let binaryInput = document.getElementById("binaryInput");
-  let decimalOutput = document.getElementById("decimalOutput");
+  // let decimalOutput = document.getElementById("decimalOutput");
+  let displayOutput = document.getElementsByName("displayOutput")
 
   // Add event listener to binary input field
   binaryInput.addEventListener("input", function(e) {
@@ -14,10 +15,13 @@ document.addEventListener("DOMContentLoaded", function(e) {
       let decimalValue = parseInt(binaryValue, 2);
 
       // Display the decimal value inside the output box
-      decimalOutput.textContent = decimalValue;
+      // decimalOutput.textContent = decimalValue;
+      displayOutput.textContent = decimalValue
+      console.log(decimalValue)
     } else {
       // Clear the decimal value if the binary value is invalid
-      decimalOutput.textContent = "";
+      // decimalOutput.textContent = "";
+      displayOutput.textContent = ""
     }
   });
 });
