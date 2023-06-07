@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
       let decimalValue = parseInt(binaryValue, 2)
       decimalOutput.value = decimalValue
     } else {
-      decimalOutput.decimalValue = ""
+      decimalOutput.value = ""
     }
   })
 })
